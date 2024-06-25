@@ -19,26 +19,26 @@ This assignment is a programming assignment wherein you have to build a multiple
 ## Business Goal
 You are required to model the demand for shared bikes with the available independent variables. It will be used by the management to understand how exactly the demands vary with different features. They can accordingly manipulate the business strategy to meet the demand levels and meet the customer's expectations. Further, the model will be a good way for management to understand the demand dynamics of a new market. 
 ## Data Dictionary
-•	instant: Record index
-•	dteday: Date
-•	season: Season (1: spring, 2: summer, 3: fall, 4: winter)
-•	yr: Year (0: 2018, 1: 2019)
-•	mnth: Month (1 to 12)
-•	holiday: Whether the day is a holiday (1: yes, 0: no)
-•	weekday: Day of the week
-•	workingday: Whether the day is a working day (1: yes, 0: no)
-•	weathersit: Weather situation
-o	1: Clear, Few clouds, Partly cloudy
-o	2: Mist + Cloudy, Mist + Broken clouds, Mist
-o	3: Light Snow, Light Rain + Thunderstorm + Scattered clouds
-o	4: Heavy Rain + Ice Pellets + Thunderstorm + Mist, Snow + Fog
-•	temp: Temperature in Celsius
-•	atemp: Feeling temperature in Celsius
-•	hum: Humidity
-•	windspeed: Wind speed
-•	casual: Count of casual users
-•	registered: Count of registered users
-•	cnt: Count of total rental bikes including both casual and registered
+- instant: record index
+- dteday : date
+- season : season (1:spring, 2:summer, 3:fall, 4:winter)
+- yr : year (0: 2018, 1:2019)
+- mnth : month ( 1 to 12)
+- holiday : weather day is a holiday or not (extracted from http://dchr.dc.gov/page/holiday-schedule)
+- weekday : day of the week
+- workingday : if day is neither weekend nor holiday is 1, otherwise is 0.
++ weathersit : 
+    - 1: Clear, Few clouds, Partly cloudy, Partly cloudy
+    - 2: Mist + Cloudy, Mist + Broken clouds, Mist + Few clouds, Mist
+    - 3: Light Snow, Light Rain + Thunderstorm + Scattered clouds, Light Rain + Scattered clouds
+    - 4: Heavy Rain + Ice Pallets + Thunderstorm + Mist, Snow + Fog
+- temp : temperature in Celsius
+- atemp: feeling temperature in Celsius
+- hum: humidity
+- windspeed: wind speed
+- casual: count of casual users
+- registered: count of registered users
+- cnt: count of total rental bikes including both casual and registered
 ## Loading and Inspecting the Data
 The dataset was loaded into a pandas DataFrame and basic inspections were performed to understand the structure of the data. This included checking for null values and generating summary statistics.
 ## Exploratory Data Analysis (EDA)
